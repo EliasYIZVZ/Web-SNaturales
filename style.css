@@ -1,0 +1,42 @@
+/* Centrar contenido de manera estándar */
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f8c5f4;
+    padding: 20px;
+    text-align: center;
+}
+
+#menu{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 10px;
+}
+
+#menu a{
+    color: #000;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#menu a:hover{
+    color: #3d0e77;
+}
+
+#main-content {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f8c5f4;
+}
+
+#galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-items: center;
+    gap: 20px;
+}
