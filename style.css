@@ -35,9 +35,25 @@ header {
     background-color: #f8c5f4;
 }
 
-#galeria{
+#galeria-grid{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     justify-items: center;
     gap: 20px;
+}
+
+/* Container for images with hover effect to scale the image */
+.image-container{
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container img{
+    width: 100%;
+    height: auto;
+    transition: transform 0.7s ease;
+}
+
+.image-container:hover img{
+    transform: scale(1.1);
 }
