@@ -32,6 +32,7 @@ form input{
 textarea{
     outline: none;
     text-decoration: none;
+    resize: none;
 }
 
 footer {
@@ -64,6 +65,11 @@ footer {
     form input, textarea {
         width: 100%;
         box-sizing: border-box;
+    }
+
+    footer{
+        position: static;
+        margin-top: 20px;
     }
 }
 
